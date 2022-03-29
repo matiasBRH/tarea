@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea</title>
+  </head>
+  <body style="background-color:bisque"/>
+    <h3><a href="" id="tarea1">Tarea 1</a></h3>
+    <h3><a href="" id="tarea2">Tarea 2</a></h3>
+    <h3><a href="" id="tarea3">Tarea 3</a></h3>
+    <hr>
+    <h2 id="resultado"></h2>
+    
+    <script type="text/javascript">
+      window.onload = function () {
+        var a = document.getElementById("tarea1");
+        var b = document.getElementById("tarea2");
+        var c = document.getElementById("tarea3");
+
+        a.onclick = function () {
+          alert("un mensaje");
+          return false;
+        };
+
+        b.onclick = function () {
+          document.getElementById("resultado").innerHTML = "Hello World";
+          return false;
+        };
+
+        c.onclick = function () {
+          document.getElementById("resultado").innerHTML = 3 + 5;
+          return false;
+        };
+      };
+    </script>
+  </body>
+</html>
