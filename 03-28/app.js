@@ -16,9 +16,8 @@ console.log(`El numero maximo de la lista es ${Math.max(...numerosLista)}`);
 console.log(`El minimo numero de la lista es ${Math.min(...numerosLista)}`);
 
 console.log("\nTarea 3:");
-let decimal1 = 45.895025
-let decimal2 = 56.788789
-let decimal3 = 78.413582
-console.log(`El Numero ${decimal1} redondeado es ${Math.round((parseFloat(decimal1.toFixed(2))))}`);
-console.log(`El Numero ${decimal2} redondeado es ${Math.round((parseFloat(decimal2.toFixed(2))))}`);
-console.log(`El Numero ${decimal3} redondeado es ${Math.round((parseFloat(decimal3.toFixed(2))))}`);
+let decimal = [45.895025, 56.788789, 78.413582]
+
+for (let i = 1; i < decimal.length; i++) {
+  console.log(`El Numero ${decimal[i]} redondeado es ${Math.round(decimal[i].toFixed(2))}`);
+}
