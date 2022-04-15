@@ -1,4 +1,5 @@
-// // //Ejercicio 6 - Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor
+//Ejercicio 6 - Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor
+function ejercicio6(){
 let numero6_1 = parseFloat(prompt("Ingresar el primer numero:"));
 if (isNaN(numero6_1)) {
   console.log("El dato ingresado no es un numero");
@@ -14,8 +15,10 @@ if (isNaN(numero6_1)) {
     );
   }
 }
+}
 
-// // //Ejercicio 7 - Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres
+//Ejercicio 7 - Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres
+function ejercicio7(){
 let numero7_1 = parseFloat(prompt("Ingresar el primer numero:"));
 if (isNaN(numero7_1)) {
   console.log("El dato ingresado no es un numero");
@@ -38,8 +41,10 @@ if (isNaN(numero7_1)) {
     }
   }
 }
+}
 
-// // //Ejercicio 8 - Escribe un programa que pida un número y diga si es divisible por 2
+//Ejercicio 8 - Escribe un programa que pida un número y diga si es divisible por 2
+function ejercicio8(){
 let numero8 = parseFloat(prompt("Ingresar un numero entero"));
 if (Number.isInteger(numero8)) {
   if (numero8 % 2 == 0) {
@@ -50,8 +55,10 @@ if (Number.isInteger(numero8)) {
 } else {
   console.log("El numero ingresado no es un entero");
 }
+}
 
-// //Ejercicio 9 - Escribe un programa que pida una frase y escriba las vocales que aparecen
+//Ejercicio 9 - Escribe un programa que pida una frase y escriba las vocales que aparecen
+function ejercicio9(){
 let frase = prompt("Ingresar una frase");
 
 console.log(`Las vocales que aparecen en la frase ${frase} son:`);
@@ -71,8 +78,10 @@ if (frase.includes("o")) {
 if (frase.includes("u")) {
   console.log(" u");
 }
+}
 
-// // Ejercicio 10 - Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7
+//Ejercicio 10 - Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7
+function ejercicio10(){
 let numero10 = parseFloat(prompt("Ingresar un numero entero"));
 if (Number.isInteger(numero10)) {
   if (numero10 % 2 == 0) {
@@ -89,8 +98,10 @@ if (Number.isInteger(numero10)) {
 } else {
   console.log("El numero ingresado no es un entero");
 }
+}
 
 //Ejercicio 11 - Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible
+function ejercicio11(){
 let numero11 = parseInt(prompt("Ingresar un numero entero"));
 // no funciona?
 // switch (true) {
@@ -124,4 +135,5 @@ if (Number.isInteger(numero11)) {
   }
 } else {
   console.log("El numero ingresado no es un entero");
+}
 }
