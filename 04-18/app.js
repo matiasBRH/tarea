@@ -25,9 +25,11 @@ function ej1() {
 // triangulo = b * h/2
 // rectangulo = b * h
 function ej2() {
-  let figura = prompt("Que figura calcular (triangulo o rectanculo)?");
+  let figura = prompt("Que figura calcular (triangulo(1) o rectanculo(2))?");
+  figura.toLowerCase()
   switch (figura) {
     case "triangulo":
+    case "1":
       let baseT = prompt("Ingresar la base");
       if (!isNaN(baseT) && baseT > 0) {
         let alturaT = prompt("Ingresar la altura");
@@ -42,6 +44,7 @@ function ej2() {
 
       break;
     case "rectangulo":
+    case "2":
       let baseR = prompt("Ingresar la base");
       if (!isNaN(baseR) && baseR > 0) {
         let alturaR = prompt("Ingresar la altura");
@@ -71,7 +74,7 @@ function ej2() {
 // 4 - es par
 // 5 - es impar
 function ej3() {
-  let numero = prompt("Ingresar un numero");
+  let numero = parseIntprompt("Ingresar un numero");
   if (!isNaN(numero) && numero >= 0) {
     for (let index = 1; index <= numero; index++) {
       if (index % 2 == 0) {
@@ -134,7 +137,7 @@ function ej5() {
     }
   }
   console.log(`${pares.length} numeros pares: ${pares}`);
-  console.log(`${impares.length} numeros impares: ${impares}`);
+  console.log(`${impares.length} numeros impares: ${impares}`); 
 }
 
 // Tomar una lista de lenguajes de programación y mostrar en consola una lista ordenada con los nombres ordenados alfabéticamente y en mayúsculas sin mutar el arreglo original.
@@ -150,7 +153,7 @@ function ej5() {
 // //2-java
 // }
 function ej6() {
-  // let lenguajes = ["javascript", "python", "c++", "c#", "java", ".net"]
+  let lenguajes = ["javascript", "python", "c++", "c#", "java", ".net"]
   // let funcionesOrdenadas = lenguajes
   // funcionesOrdenadas.sort()
   // console.log(lenguajes)
@@ -166,4 +169,22 @@ function ej6() {
   //   lenguajes[index]=lenguajes[index].charAt(0).toUpperCase()+lenguajes[index].substring(1);
   // }
   console.log(`Lista original con mayusculas\n${lenguajes}`);
+}
+
+
+function puzzle(numero) {
+  let a = 1;
+  let b = 1;
+  let c = 1;
+  let d = 1;
+  let x = 0;
+  for (let index = 0; index < numero; index++) {
+    x = d + 2 * c + 3 * b + 4 * a;
+    a = b;
+    b = c;
+    c = d;
+    d = x;
+  }
+  const dconv = String(d).slice(-10);
+  console.log(dconv % 10000000000);
 }
