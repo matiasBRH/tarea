@@ -54,3 +54,6 @@ pelicula3 = new Pelicula("Ghostbusters","Comedy",1984,"After losing their academ
 pelicula1.listarInfo()
 pelicula2.listarInfo()
 pelicula3.listarInfo()
+
+
+

@@ -171,20 +171,3 @@ function ej6() {
   console.log(`Lista original con mayusculas\n${lenguajes}`);
 }
 
-
-function puzzle(numero) {
-  let a = 1;
-  let b = 1;
-  let c = 1;
-  let d = 1;
-  let x = 0;
-  for (let index = 0; index < numero; index++) {
-    x = d + 2 * c + 3 * b + 4 * a;
-    a = b;
-    b = c;
-    c = d;
-    d = x;
-  }
-  const dconv = String(d).slice(-10);
-  console.log(dconv % 10000000000);
-}
