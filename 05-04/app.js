@@ -17,9 +17,9 @@ function mostrarCalorias(){
   let contador=0
   let calorias=0
   if (!bicicleta) {
-    bicicleta=setInterval(function(){    
-      console.log(`Has quemado ${calorias.toFixed(2)} calorias en ${contador++} segundos`);
-      calorias+=0.10666666666666666666666666666667
+    bicicleta=setInterval(function(){  
+      calorias+=0.10666666666666666666666666666667  
+      console.log(`Has quemado ${calorias.toFixed(2)} calorias en ${contador+=1} segundos`);      
     }, 1000)
   } else{
     console.log('La bicicleta ya esta funcionando!')
