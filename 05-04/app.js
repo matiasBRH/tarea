@@ -12,7 +12,7 @@ const mostrarFecha = function(){
 }
 
 //Con 30 minutos de bicicleta puedes quemar 192 calorías. Crear un script que muestre en consola las calorías que vas quemando por segundo simulando que vas en bicicleta.
-var bicicleta;
+let bicicleta;
 function mostrarCalorias(){
   let contador=0
   let calorias=0
