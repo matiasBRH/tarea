@@ -3,13 +3,18 @@ function comenzarJuego() {
   document.getElementById("comenzarJuego").disabled = true;
   document.getElementById("botonEnviar").disabled = false;
   numeroAleatorio = Math.ceil(Math.random() * 10);
-  // console.log(numeroAleatorio);
+  // console.log(numeroAleatorio);  
 }
 
 function terminarJuego() {
   document.getElementById("comenzarJuego").disabled = false;
   document.getElementById("botonEnviar").disabled = true;
   document.getElementById("campoNumero").value = "";
+  let imagen = document.createElement("img");
+  imagen.src =
+  "https://i.gifer.com/origin/d7/d755a0e1aa4dca488626cc82bbfda518.gif";
+  imagen.classList = "medal";
+  document.getElementById("resultado").appendChild(imagen)
 }
 
 function capturarNumeroInput(e) {
@@ -29,17 +34,10 @@ function capturarNumeroInput(e) {
       alert("Ingresar un numero del 1 al 10");
       break;
   }
-  
 }
 
 document.getElementById("botonEnviar").disabled = true;
 document.getElementById("botonEnviar").addEventListener("click", function () {
-  // console.log(document.getElementById("campoNumero").value);
-  capturarNumeroInput(document.getElementById("campoNumero"));
+// console.log(document.getElementById("campoNumero").value);
+capturarNumeroInput(document.getElementById("campoNumero"));
 });
-// document.getElementById("campoNumero").addEventListener("keypress", function (evt) {
-//   if (evt.which < 48 || evt.which > 57)
-//   {
-//       evt.preventDefault();
-//   }
-// });
