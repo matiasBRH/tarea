@@ -26,9 +26,13 @@ function capturarNumeroInput(e) {
       break;
     case e.value > numeroAleatorio && e.value <= 10:
       alert("El numero ingresado es mayor al numero magico");
+      // document.getElementById("campoNumero").focus()
+      document.getElementById("campoNumero").select()
       break;
     case e.value < numeroAleatorio && e.value >= 1:
       alert("El numero ingresado es menor al numero magico");
+      // document.getElementById("campoNumero").focus()
+      document.getElementById("campoNumero").select()
       break;
     default:
       alert("Ingresar un numero del 1 al 10");

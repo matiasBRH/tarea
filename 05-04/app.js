@@ -1,7 +1,7 @@
 //Crear un script que luego de 3 segundos muestre en el navegador la fecha del día.
 const mostrarFecha = function(){
   setTimeout(function (){
-  let dia = new Date().getDay()
+  let dia = new Date().getDate()
   let diaNombre = new Intl.DateTimeFormat('es-ES', { weekday: 'long'}).format(new Date())
   let diaNombreMayus = diaNombre.charAt(0).toUpperCase()+diaNombre.slice(1)
   let mes = new Intl.DateTimeFormat('es-ES', { month: 'long'}).format(new Date())
